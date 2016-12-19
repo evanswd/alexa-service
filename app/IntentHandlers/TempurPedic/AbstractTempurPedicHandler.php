@@ -12,7 +12,7 @@ namespace App\IntentHandlers\TempurPedic;
 abstract class AbstractTempurPedicHandler
 {
     private $ipBill = "192.168.1.100";
-    private $ipIsabella = "192.168.1.100";
+    private $ipIsabella = "192.168.1.114";
 
     protected $beds = array();
 

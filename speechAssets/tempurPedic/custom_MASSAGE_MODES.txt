@@ -1,0 +1,4 @@
+constant
+wave
+simultaneous wave
+pulse

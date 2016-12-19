@@ -15,7 +15,7 @@
       "intent": "MassageIntent",
       "slots": [
         { "name": "Bed", "type": "BEDS" },
-        { "name": "Preset", "type": "PRESETS" }
+        { "name": "Mode", "type": "MASSAGE_MODES" }
       ]
     },
     {
