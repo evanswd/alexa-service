@@ -1,0 +1,56 @@
+{
+  "intents": [
+    {
+      "intent": "PowerOnIntent",
+      "slots": [
+        { "name": "Room", "type": "LIST_OF_ROOMS" },
+        { "name": "Volume", "type": "AMAZON.NUMBER" }
+      ]
+    },
+    {
+      "intent": "PowerOffIntent",
+      "slots": [ { "name": "Room", "type": "LIST_OF_ROOMS" } ]
+    },
+    {
+      "intent": "VolumeIntent",
+      "slots": [
+        { "name": "Room",   "type": "LIST_OF_ROOMS" },
+        { "name": "Volume", "type": "AMAZON.NUMBER" }
+      ]
+    },
+    {
+      "intent": "PanIntent",
+      "slots": [
+        { "name": "Room",   "type": "LIST_OF_ROOMS" },
+        { "name": "Pan", "type": "PAN_DIRECTION" }
+      ]
+    },
+    {
+      "intent": "StatusIntent",
+      "slots": [ { "name": "Room", "type": "LIST_OF_ROOMS" } ]
+    },
+    {
+      "intent": "PlayIntent",
+      "slots": [ { "name": "Favorite", "type": "SONOS_ACTION" } ]
+    },
+    {
+      "intent": "PowerPlayIntent",
+      "slots": [
+        { "name": "Room",   "type": "LIST_OF_ROOMS" },
+        { "name": "Volume", "type": "AMAZON.NUMBER" },
+        { "name": "Favorite", "type": "SONOS_ACTION" }
+      ]
+    },
+    {
+      "intent": "SearchIntent",
+      "slots": [ { "name": "SearchTerms", "type": "STUB" } ]
+    },
+    { "intent": "PauseIntent" },
+    { "intent": "PreviousIntent" },
+    { "intent": "SkipIntent" },
+    { "intent": "PartyTimeIntent" },
+    { "intent": "ConfirmationIntent" },
+    { "intent": "CancellationIntent" },
+    { "intent": "AMAZON.HelpIntent" }
+  ]
+}

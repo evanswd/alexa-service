@@ -1,0 +1,31 @@
+kitchen
+dining room
+office
+library
+study
+master
+master bedroom
+outdoor
+patio
+pool
+family room
+den
+basement
+garage
+porch
+sun room
+guest bedroom
+back bedroom
+rear bedroom
+front bedroom
+side bedroom
+man cave
+all rooms
+all speakers
+all zones
+all outdoor speakers
+all outdoor zones
+all indoor speakers
+all indoor zones
+kitchen and dining room
+1st floor

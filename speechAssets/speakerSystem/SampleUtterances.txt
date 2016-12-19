@@ -1,0 +1,89 @@
+PowerOnIntent turn on {Room}
+PowerOnIntent turn on the {Room}
+PowerOnIntent turn on the {Room} speakers
+PowerOnIntent turn {Room} on
+PowerOnIntent turn the {Room} on
+PowerOnIntent turn the {Room} speakers on
+PowerOnIntent turn on the speakers in the {Room}
+PowerOnIntent turn on {Room} at {Volume}
+PowerOnIntent turn on the {Room} at {Volume}
+PowerOnIntent turn on the {Room} speakers at {Volume}
+PowerOnIntent turn {Room} on at {Volume}
+PowerOnIntent turn the {Room} on at {Volume}
+PowerOnIntent turn the {Room} speakers on at {Volume}
+PowerOnIntent turn on the speakers in the {Room} at {Volume}
+
+PowerOffIntent turn off {Room}
+PowerOffIntent turn off the {Room}
+PowerOffIntent turn off the {Room} speakers
+PowerOffIntent turn the {Room} off
+PowerOffIntent turn the {Room} speakers off
+PowerOffIntent turn off the speakers in the {Room}
+
+VolumeIntent set the {Room} volume at {Volume}
+VolumeIntent set the {Room} volume to {Volume}
+VolumeIntent set the {Room} to {Volume}
+VolumeIntent set the volume in the {Room} to {Volume}
+VolumeIntent set the volume on the {Room} to {Volume}
+VolumeIntent {Room} volume {Volume}
+
+PanIntent pan the {Room} speakers to the {Pan}
+PanIntent pan the {Room} speakers to {Pan}
+PanIntent pan the {Room} to the {Pan}
+PanIntent pan the speakers in the {Room} to the {Pan}
+PanIntent pan the speakers on the {Room} to the {Pan}
+PanIntent {Room} pan {Pan}
+
+StatusIntent the status of the {Room}
+StatusIntent about the {Room}
+StatusIntent what's on
+StatusIntent what's turned on
+StatusIntent what's currently on
+
+ConfirmationIntent yes
+ConfirmationIntent yep
+CancellationIntent no
+CancellationIntent cancel
+
+PlayIntent play music
+PlayIntent play {Favorite}
+PlayIntent resume
+PlayIntent resume music
+
+PauseIntent pause
+PauseIntent pause music
+PauseIntent pause the music
+PauseIntent stop
+PauseIntent stop music
+PauseIntent stop the music
+
+PreviousIntent rewind
+PreviousIntent rewind song
+PreviousIntent rewind this song
+PreviousIntent previous
+PreviousIntent previous song
+
+SkipIntent skip
+SkipIntent skip song
+SkipIntent skip this song
+SkipIntent next
+SkipIntent next song
+
+SearchIntent search for {SearchTerms}
+
+PowerPlayIntent turn on {Room} and play {Favorite}
+PowerPlayIntent turn on the {Room} and play {Favorite}
+PowerPlayIntent turn on the {Room} speakers and play {Favorite}
+PowerPlayIntent turn {Room} on and play {Favorite}
+PowerPlayIntent turn the {Room} on and play {Favorite}
+PowerPlayIntent turn the {Room} speakers on and play {Favorite}
+PowerPlayIntent turn on the speakers in the {Room} and play {Favorite}
+PowerPlayIntent turn on {Room} to {Volume} and play {Favorite}
+PowerPlayIntent turn on the {Room} to {Volume} and play {Favorite}
+PowerPlayIntent turn on the {Room} speakers to {Volume} and play {Favorite}
+PowerPlayIntent turn {Room} on to {Volume} and play {Favorite}
+PowerPlayIntent turn the {Room} on to {Volume} and play {Favorite}
+PowerPlayIntent turn the {Room} speakers on to {Volume} and play {Favorite}
+PowerPlayIntent turn on the speakers in the {Room} to {Volume} and play {Favorite}
+
+PartyTimeIntent it's party time

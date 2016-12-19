@@ -1,0 +1,9 @@
+fox
+fox jumps
+fox jumps dog
+fox jumps the dog
+the fox jumps the dog
+the fox jumps over the dog
+the quick fox jumps over the dog
+the quick brown fox jumps over the dog
+the quick brown fox jumps over the lazy dog
