@@ -12,7 +12,7 @@ class TcpPortConnection
 {
     private $ipAddress;
     private $port;
-    private $Socket;
+    private $socket;
     //private $lock;
 
     function __construct($ipAddress, $port)

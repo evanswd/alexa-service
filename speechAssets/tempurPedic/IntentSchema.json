@@ -1,0 +1,27 @@
+{
+  "intents": [
+    {
+      "intent": "PositionIntent",
+      "slots": [
+        { "name": "Bed", "type": "BEDS" },
+        { "name": "Position", "type": "AMAZON.NUMBER" }
+      ]
+    },
+    {
+      "intent": "FlatPositionIntent",
+      "slots": [ { "name": "Bed", "type": "BEDS" } ]
+    },
+    {
+      "intent": "MassageIntent",
+      "slots": [
+        { "name": "Bed", "type": "BEDS" },
+        { "name": "Preset", "type": "PRESETS" }
+      ]
+    },
+    {
+      "intent": "StopMassageIntent",
+      "slots": [ { "name": "Bed", "type": "BEDS" } ]
+    },
+    { "intent": "AMAZON.HelpIntent" }
+  ]
+}

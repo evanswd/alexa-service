@@ -8,7 +8,6 @@
 
 namespace App\IntentHandlers;
 
-
 interface CanHandleIntent
 {
     public function HandleIntent(\Alexa\Request\IntentRequest $request, \Alexa\Response\Response $response);

@@ -1,0 +1,13 @@
+PositionIntent set {Bed} bed to {Position}
+PositionIntent set {Bed} bed to position {Position}
+PositionIntent move {Bed} bed to {Position}
+PositionIntent move {Bed} bed to position {Position}
+PositionIntent adjust {Bed} bed to {Position}
+PositionIntent adjust {Bed} bed to position {Position}
+
+FlatPositionIntent set {Bed} bed flat
+FlatPositionIntent set {Bed} bed to flat
+FlatPositionIntent move {Bed} bed flat
+FlatPositionIntent move {Bed} bed to flat
+FlatPositionIntent adjust {Bed} bed flat
+FlatPositionIntent adjust {Bed} bed to flat

@@ -16,4 +16,5 @@ $app->get('/', function () use ($app) {
 });
 
 $app->post('speakerSystem', 'SpeakerSystemController@index');
+$app->post('tempurPedic', 'TempurPedicController@index');
 $app->get('test', 'TestController@index');
