@@ -12,12 +12,8 @@ FlatPositionIntent move {Bed} bed to flat
 FlatPositionIntent adjust {Bed} bed flat
 FlatPositionIntent adjust {Bed} bed to flat
 
-MassageIntent start {Mode} massage on {Bed} bed
-MassageIntent start {Mode} massage for {Bed} bed
 MassageIntent turn on {Mode} massage on {Bed} bed
 MassageIntent turn on {Mode} massage for {Bed} bed
 
-StopMassageIntent stop massage on {Bed} bed
-StopMassageIntent stop massage for {Bed} bed
 StopMassageIntent turn off massage on {Bed} bed
 StopMassageIntent turn off massage for {Bed} bed
