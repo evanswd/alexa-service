@@ -8,6 +8,8 @@
 
 namespace App\IntentHandlers\SpeakerSystem;
 
+use App\Services\Sonos\SonosService;
+
 class PowerOnIntentHandler extends AbstractSpeakerSystemIntentHandler
 {
     public function HandleSpeakerIntent(\Alexa\Request\IntentRequest $request, \Alexa\Response\Response $response)
@@ -20,6 +22,8 @@ class PowerOnIntentHandler extends AbstractSpeakerSystemIntentHandler
 
         $this->getService()->powerOn($this->rooms[$request->slots["Room"]]);
         $this->getService()->volume($this->rooms[$request->slots["Room"]], $volume);
+        //Resume whatever was last playing...
+        (new SonosService())->play();
         $response->respond("Sure thing!")->endSession()
             ->withCard("Alexa turned on the " . $request->slots["Room"] . " speakers.");
     }
