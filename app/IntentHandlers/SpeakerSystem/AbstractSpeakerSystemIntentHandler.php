@@ -13,6 +13,8 @@ use App\Services\Monoprice\MonopriceService;
 
 abstract class AbstractSpeakerSystemIntentHandler implements CanHandleIntent
 {
+    protected $denonIP = "192.168.1.151";
+
     private $_service = null;
     protected function getService() {
         if($this->_service == null)
@@ -39,7 +41,10 @@ abstract class AbstractSpeakerSystemIntentHandler implements CanHandleIntent
         "all outdoor speakers" => array(5,6),
         "all outdoor zones" => array(5,6),
         "all indoor speakers" => array(1,2,3,4),
-        "all indoor zones" => array(1,2,3,4)
+        "all indoor zones" => array(1,2,3,4),
+        //The Man Cave is special!
+        "man cave" => null,
+        "the man cave" => null
     );
 
     private $specialIntents = array(

@@ -8,6 +8,8 @@
 
 namespace App\IntentHandlers\SpeakerSystem;
 
+use App\Services\Denon\DenonService;
+use App\Services\Denon\DenonSources;
 use App\Services\Sonos\SonosService;
 
 class PowerOnIntentHandler extends AbstractSpeakerSystemIntentHandler
@@ -16,14 +18,23 @@ class PowerOnIntentHandler extends AbstractSpeakerSystemIntentHandler
     {
         if($this->ValidateRoom($request, $response) === false) return;
 
-        $volume = 12; //12 is a safe start volume...
-        if(isset($request->slots["Volume"]))
-            $volume = $request->slots["Volume"];
+        //Special override for Man Cave
+        if($request->slots["Room"] == "man cave" || $request->slots["Room"] == "the man cave") {
+            $denonSvc = new DenonService($this->denonIP);
+            $denonSvc->powerOn();
+            //Why doesn't my constant work? Oh well...
+            $denonSvc->setSource("CD");
+        }
+        else {
+            $volume = 12; //12 is a safe start volume...
+            if(isset($request->slots["Volume"]))
+                $volume = $request->slots["Volume"];
 
-        $this->getService()->powerOn($this->rooms[$request->slots["Room"]]);
-        $this->getService()->volume($this->rooms[$request->slots["Room"]], $volume);
-        //Resume whatever was last playing...
-        (new SonosService())->play();
+            $this->getService()->powerOn($this->rooms[$request->slots["Room"]]);
+            $this->getService()->volume($this->rooms[$request->slots["Room"]], $volume);
+            //Resume whatever was last playing...
+            (new SonosService())->play();
+        }
         $response->respond("Sure thing!")->endSession()
             ->withCard("Alexa turned on the " . $request->slots["Room"] . " speakers.");
     }
