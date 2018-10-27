@@ -13,7 +13,7 @@ use App\Services\Monoprice\MonopriceService;
 
 abstract class AbstractSpeakerSystemIntentHandler implements CanHandleIntent
 {
-    protected $denonIP = "192.168.1.151";
+    protected $denonIP = "192.168.1.101";
 
     private $_service = null;
     protected function getService() {

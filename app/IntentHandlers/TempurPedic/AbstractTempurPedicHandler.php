@@ -12,7 +12,7 @@ namespace App\IntentHandlers\TempurPedic;
 abstract class AbstractTempurPedicHandler
 {
     private $ipBill = "192.168.1.100";
-    private $ipIsabella = "192.168.1.114";
+    private $ipIsabella = "192.168.1.115";
 
     protected $beds = array();
 
@@ -21,12 +21,15 @@ abstract class AbstractTempurPedicHandler
             "bill" => $this->ipBill,
             "bills" => $this->ipBill,
             "bill's" => $this->ipBill,
+            "hillside" => $this->ipBill,
             "isabella" => $this->ipIsabella,
             "isabellas" => $this->ipIsabella,
             "isabella's" => $this->ipIsabella,
+            "Isabella's" => $this->ipIsabella,
             "love bug" => $this->ipIsabella,
             "love bugs" => $this->ipIsabella,
             "love bug's" => $this->ipIsabella,
+            "lovebugs" => $this->ipIsabella,
         );
     }
 
